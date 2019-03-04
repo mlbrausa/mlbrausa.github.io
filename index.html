@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
+    <title>ML for Wood Science</title>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>  
+</head>
 
-  <body>
-
-<button id="upload_widget" class="cloudinary-button">Upload files</button>
-
-<script src="http://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>  
+<body>
 
 <p> Load your image: <p>
+<button id="upload_widget" class="cloudinary-button">Upload files</button>
 
 <script type="text/javascript">  
+
 var myWidget = cloudinary.createUploadWidget({
   cloudName: 'mlbrausa', 
   uploadPreset: 'ql5eg08n'}, (error, result) => { console.log(error, result) })
@@ -21,7 +21,9 @@ var myWidget = cloudinary.createUploadWidget({
 document.getElementById("upload_widget").addEventListener("click", function(){
     myWidget.open();
   }, false);
-</script>
 
-  </body>
+</script>
+  
+</body>
+  
 </html>
