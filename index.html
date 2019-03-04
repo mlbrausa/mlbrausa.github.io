@@ -7,7 +7,10 @@
   </head>
 
 <body>
-      <script type="text/javascript">  
+
+  <p> Load your image: <p>
+  <button id="upload_widget" class="cloudinary-button">Upload files</button>
+        <script type="text/javascript">  
 var myWidget = cloudinary.createUploadWidget({
   cloudName: 'mlbrausa', 
   uploadPreset: 'ql5eg08n'}, (error, result) => { console.log(error, result) })
@@ -19,8 +22,6 @@ document.getElementById("upload_widget").addEventListener("click", function(){
   }, false);
 </script>
   
-  <p> Load your image: <p>
-  <button id="upload_widget" class="cloudinary-button">Upload files</button>
 </body>
   
 </html>
