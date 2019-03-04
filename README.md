@@ -1,1 +1,2 @@
-# mlbrausa.github.io
+# Machine learning friendly data for wood science
+
