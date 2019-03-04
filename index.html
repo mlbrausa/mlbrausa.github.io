@@ -12,6 +12,8 @@ var myWidget = cloudinary.createUploadWidget({
   cloudName: 'mlbrausa', 
   uploadPreset: 'ql5eg08n'}, (error, result) => { console.log(error, result) })
 
+console.log(myWidget)
+
 document.getElementById("upload_widget").addEventListener("click", function(){
     myWidget.open();
   }, false);
